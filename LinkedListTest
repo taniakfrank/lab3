@@ -1,0 +1,18 @@
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class LinkedlistTest {
+    // it is adding backwards... 
+    @Test
+    public void testingLinkedList(){
+        LinkedList l = new LinkedList();
+        l.add(5);
+        l.add(3);
+        l.add(7);
+        assertEquals(7, l.last);
+        assertEquals(5, l.first);
+        assertEquals(3, l.length);
+    }
+}
